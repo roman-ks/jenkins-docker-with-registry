@@ -13,7 +13,7 @@ One of the solutions it to create local Docker registry and get images required 
 `docker build dind -t localreg-dind:0.1`
 2. Create Jenkins image  
 `docker build . -t myjenkins-blueocean:2.0`
-3. Run dind and Jenkins
+3. Run dind and Jenkins  
 `run_jenkins.bat`
 4. Add local registry to the Docker network  
 `docker network connect --alias myregistry jenkins registry`
