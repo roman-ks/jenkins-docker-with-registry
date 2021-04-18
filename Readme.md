@@ -8,7 +8,8 @@ One of the solutions it to create local Docker registry and get images required 
 ## You'll need
 * local Docker registry. See [Docker docs](https://docs.docker.com/registry/deploying/)
 
-## To start Jenkins in Docker with local registry
+## Start Jenkins in Docker
+To start Jenkins in Docker with local registry:  
 1. Create custom dind image  
 `docker build dind -t localreg-dind:0.1`
 2. Create Jenkins image  
